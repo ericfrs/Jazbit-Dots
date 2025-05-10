@@ -1,7 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./user-pkgs.nix ];
+  imports = [
+    ./user-pkgs.nix 
+    ./starship.nix
+    ./fish.nix
+  ];
 
   home.username = "ericfrs";
   home.homeDirectory = "/home/ericfrs";

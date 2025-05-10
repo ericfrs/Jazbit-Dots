@@ -7,8 +7,6 @@
     neovim
     google-chrome
     ghostty
-    fish
-    starship
     vscode
     zip
     xz

@@ -2,9 +2,17 @@
 
 {
   environment.systemPackages = with pkgs; [
+    libva-utils
+    vdpauinfo
+    glxinfo
+    intel-gpu-tools
+    htop
+    powertop
+    iw
+    pciutils
+    usbutils
     brave
     fastfetch
-    htop
     ghostty
     fish
     obsidian
@@ -16,5 +24,6 @@
     motrix
     readest
     git
+    google-chrome
   ];
 }

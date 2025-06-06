@@ -25,5 +25,6 @@
     readest
     git
     google-chrome
+    maple-mono.NF
   ];
 }

@@ -26,5 +26,13 @@
     git
     google-chrome
     maple-mono.NF
+    papirus-icon-theme
+    spotify-player
+    inter
+    roboto
+    ibm-plex
+    noto-fonts
+    jetbrains-mono
+    discord
   ];
 }

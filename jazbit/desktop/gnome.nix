@@ -1,11 +1,15 @@
 { config, pkgs, ... }:
 
 {
-  services.xserver.enable = true;
+  services = {
+    xserver.enable = true;
+    xserver.displayManager.gdm.enable = true;
+    xserver.desktopManager.gnome.enable = true;
+  };
 
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
   programs.dconf.enable = true;
+
+  fonts.fontconfig.subpixel.rgba = "rgb";
 
   environment.gnome.excludePackages = with pkgs; [
     epiphany
@@ -23,9 +27,16 @@
   ];
 
   environment.systemPackages = with pkgs.gnomeExtensions; [
+    pkgs.gnome-tweaks
+    pkgs.bibata-cursors
+    pkgs.adw-gtk3
     appindicator
     window-title-is-back
     just-perfection
-    forge
+    pop-shell
+    caffeine
+    arcmenu
+    clipboard-indicator
+    adw-gtk3-colorizer
   ];
 }

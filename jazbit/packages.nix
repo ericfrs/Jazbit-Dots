@@ -34,5 +34,6 @@
     noto-fonts
     jetbrains-mono
     discord
+    dconf-editor
   ];
 }

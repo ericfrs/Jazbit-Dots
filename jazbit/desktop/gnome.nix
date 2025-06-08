@@ -9,8 +9,6 @@
 
   programs.dconf.enable = true;
 
-  fonts.fontconfig.subpixel.rgba = "rgb";
-
   environment.gnome.excludePackages = with pkgs; [
     epiphany
     gedit

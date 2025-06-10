@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lazyvim-starter, ... }:
 
 {
   home = {
@@ -301,4 +301,9 @@
     mantle = "#e6e9ef"
     crust = "#dce0e8"
     '';
+
+  home.file.".config/nvim" = {
+    source = lazyvim-starter;
+    recursive = true;
+  };
 }

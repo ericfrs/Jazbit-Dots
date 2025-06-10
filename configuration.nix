@@ -7,7 +7,7 @@
       ./jazbit/packages.nix
       ./jazbit/cli.nix
       ./jazbit/desktop/gnome.nix
-      ./jazbit/nvf.nix
+      ./jazbit/neovim.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
